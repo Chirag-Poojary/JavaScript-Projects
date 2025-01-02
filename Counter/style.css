@@ -1,0 +1,82 @@
+/* counter */
+
+*{
+    font-family: Verdana;
+    background-color: #e69f9f;
+}
+body{
+    height: 95vh;
+    width: 165vh;
+}
+#head{
+    font-size: 50px;
+    font-weight: bold;
+    color: #721a1a;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+#counter{
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    border-color: #cf6c6c;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+#increment{
+    background-color: #d31010;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    margin-left: 160px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#increment:hover{
+    background-color: #ff5858;
+}
+#reset{
+    background-color: #d31010;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#reset:hover{
+    background-color: #ff5858;
+}
+#decrement{
+    background-color: #d31010;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    margin-right: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#decrement:hover{
+    background-color: #ff5858;
+}
