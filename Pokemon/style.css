@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 50em;
+    height: 40em;
+    font-family: Verdana;
+    background-color: #0075BE;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCC00;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px #00436c;
+}
+#btn{
+    background-image: url("pokeball.png");
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding: 5px 5px 65px 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: -4px 4px 15px #000;
+}
+@keyframes dim {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+#btn:active {
+    animation: dim 0.5s;
+}
+#btnimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#name{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #65c4ff;
+    border: none;
+    box-shadow: 4px 4px 10px #00436c;
+}
+#pokeimg{
+    display: none;
+    height: 150px;
+}
