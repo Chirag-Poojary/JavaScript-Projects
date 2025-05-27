@@ -3,23 +3,23 @@
     padding: 0px;
 }
 body{
-    width: 50em;
-    height: 40em;
+    width: 100vw;
+    height: 100vh;
     font-family: Verdana;
     background-color: #0075BE;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 #main{
-    width: 400px;
-    height: 400px;
+    width: 50vw;
+    height: 75vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #FFCC00;
+    background-color: #e6b800;
     border-radius: 20px;
     box-shadow: 8px 8px 10px #00436c;
 }
@@ -29,8 +29,8 @@ body{
     font-size: large;
     font-weight: 600;
     padding: 5px 5px 65px 5px;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: none;
     background-size: cover;
@@ -47,8 +47,8 @@ body{
     animation: dim 0.5s;
 }
 #btnimg{
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -61,5 +61,5 @@ body{
 }
 #pokeimg{
     display: none;
-    height: 150px;
+    height: 400px;
 }

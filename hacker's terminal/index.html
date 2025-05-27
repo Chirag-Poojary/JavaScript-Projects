@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hacker Terminal</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      background: linear-gradient(180deg, #050505, #0f111a);
+      color: #39ff14;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 18px;
+      line-height: 1.5;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .terminal {
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+      animation: flicker 1s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.85; }
+      50% { opacity: 1; }
+      100% { opacity: 0.85; }
+    }
+
+    ::selection {
+      background: #00fff7;
+      color: #000;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background: #39ff14;
+      margin-left: 4px;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal" id="terminal"></div>
+
+  <script>
+    const randomDelay = () => {
+      return new Promise(resolve => {
+        const timeout = 1 + 3 * Math.random();
+        setTimeout(() => {
+          resolve();
+        }, timeout * 1000);
+      });
+    };
+
+    const addItem = async (item) => {
+      await randomDelay();
+      const terminal = document.getElementById('terminal');
+      terminal.innerHTML += `<div>> ${item}</div>`;
+      window.scrollTo(0, document.body.scrollHeight);
+    };
+
+    async function main() {
+        const lines = [
+            "Welcome to the Hacker's Terminal!",
+            "Initializing system...",
+            "Loading modules...",
+            "Accessing database...",
+            "Fetching data...",
+            "Data retrieval complete.",
+            "System ready.",
+            "Establishing secure connection...",
+            "Bypassing firewall...",
+            "Injecting payload...",
+            "Payload delivered.",
+            "Decrypting files...",
+            "Decryption complete.",
+            "Launching exploit...",
+            "Exploit successful.",
+            "Access granted.",
+            "Reading confidential logs...",
+            "Downloading encrypted archive...",
+            "Cracking password hash...",
+            "SHA-256 hash cracked: **** ****",
+            "Uploading spoofed certificates...",
+            "Certificate spoofing successful.",
+            "Running cleanup scripts...",
+            "Erasing logs...",
+            "Logs erased.",
+            "Disconnecting from target...",
+            "Connection terminated.",
+            "Session ended. Returning to idle state."
+    ];
+
+
+      for (const line of lines) {
+        await addItem(line);
+      }
+
+      // Add final blinking cursor
+      const terminal = document.getElementById('terminal');
+      const cursorLine = document.createElement('div');
+      cursorLine.innerHTML = '<span class="cursor"></span>';
+      terminal.appendChild(cursorLine);
+    }
+
+    main();
+  </script>
+</body>
+</html>
