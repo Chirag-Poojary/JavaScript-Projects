@@ -12,14 +12,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
-    width: 350px;
+    height: 550px;
+    width: 550px;
     background-color: rgb(255, 193, 231);
     border-radius: 50%;
     box-shadow: 0 0 70px rgba(0, 0, 0, 0.8);
 }
 .stopwatch{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -27,7 +27,7 @@ body{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .control{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 10px;
@@ -46,5 +46,6 @@ body{
 }
 #display{
     font-family: monospace;
-    font-size: 45px;
+    font-size: 65px;
+    margin: 15px;
 }
